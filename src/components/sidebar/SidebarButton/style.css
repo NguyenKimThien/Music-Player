@@ -1,0 +1,49 @@
+.sidebar-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fdfbfb;
+
+}
+.sidebar-button .btn-body{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    color: #F8D9C0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin : 5px auto;
+}
+.btn-title{
+    margin: 4px auto;
+    font-weight: 600;
+    font-size: 14px;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+@keyframes flyDown {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.btn-body.active {
+    background-color: #F8D9C0;
+    color: #fff;
+    animation: flyDown 0.5s ease-out;
+}
+.btn-body:hover{
+    color: #fff;
+}

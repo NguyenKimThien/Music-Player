@@ -1,0 +1,9 @@
+.main-body{
+    display: flex;
+    flex-direction: row;
+}
+.main-body .main-content{
+    background-color: rgb(59, 9, 99);
+    border-radius: 30px;
+    width: 100%;
+}
