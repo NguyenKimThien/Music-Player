@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css"
+import { setClientToken } from "../../utils/spotify";
 import SideBar from "../../components/sidebar";
 import {
   Routes,
@@ -14,14 +15,13 @@ const Home = () => {
 
   useEffect(() => {
     const storedToken = localStorage.getItem("access_token");
-    console.log("Stored token in App.js:", storedToken);
 
     if (storedToken) {
       setToken(storedToken);
+      setClientToken(storedToken);
     }
   }, []);
   const isHaveToken = (token === "undefined" || token === "null" || token === "") ? false : true;
-  console.log("isHaveToken:", isHaveToken);
   return !isHaveToken ? (<Login/>) : (
     <BrowserRouter>
       <div className="main-body">        

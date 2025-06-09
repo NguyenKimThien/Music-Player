@@ -1,0 +1,65 @@
+.trending-container {
+  padding: 20px;
+  color: white;
+}
+
+.trending-container h1 {
+  margin-bottom: 30px;
+}
+
+.trending-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.track-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.01);
+}
+
+.track-number {
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+}
+
+.track-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  margin: 0 15px;
+}
+
+.track-info {
+  flex: 1;
+}
+
+.track-name {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.track-artist {
+  margin: 5px 0 0;
+  color: #b3b3b3;
+  font-size: 0.9em;
+}
+
+.loading {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+}

@@ -27,7 +27,7 @@ const Login = () => {
     const response = await body.json();
     if (response.access_token) {
       localStorage.setItem('access_token', response.access_token);
-      window.location.reload(); // Đảm bảo state được cập nhật
+      window.location.reload();
     }
 };
   useEffect(() => {

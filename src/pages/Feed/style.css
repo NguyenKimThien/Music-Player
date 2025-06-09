@@ -1,0 +1,71 @@
+.main-body .main-content {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #1E2A3E;
+    opacity: 1;
+    background-image: repeating-radial-gradient(circle at center left, transparent 0, #1E2A3E 100px), repeating-linear-gradient(#23365655, #233656);
+}
+
+.feed-container {
+  padding: 20px;
+}
+
+.feed-section {
+  margin-bottom: 40px;
+}
+
+.feed-section h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feed-card {
+  background: #282828;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.feed-card:hover {
+  background: #383838;
+  transform: translateY(-5px);
+}
+
+.feed-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.feed-title {
+  color: white;
+  font-weight: bold;
+  margin: 8px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feed-subtitle {
+  color: #b3b3b3;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loading {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+}
