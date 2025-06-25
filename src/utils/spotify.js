@@ -3,6 +3,7 @@ import axios from "axios";
 const authEndpoint = "https://accounts.spotify.com/authorize?";
 export const client_id = "248079e70cb04f8aabbfb017ec850330";
 export const redirect_uri = "http://127.0.0.1:3000/callback";
+
 export const scope = 'user-read-private user-read-email playlist-read-private playlist-read-collaborative';
 
 export const handleLogin = async () => {
